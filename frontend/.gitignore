@@ -1,0 +1,36 @@
+# ------------------------
+# OS / Editor
+# ------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+
+# ------------------------
+# Node / Next.js (frontend)
+# ------------------------
+node_modules/
+.next/
+out/
+.turbo/
+.swc/
+.cache/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Next.js env (if you add one)
+.env
+.env.*
+!.env.example
+
+# ------------------------
+# Build / misc
+# ------------------------
+*.tmp
+*.temp
+*.bak
+*.swp

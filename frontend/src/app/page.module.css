@@ -1,0 +1,364 @@
+/* src/app/page.module.css */
+
+.bg {
+  min-height: 100vh;
+  background: radial-gradient(1000px 600px at 50% -10%, rgba(124, 58, 237, 0.22), transparent 60%),
+    #f7f7fb;
+  padding: 18px;
+  display: grid;
+  place-items: center;
+}
+
+.shell {
+  width: min(920px, 100%);
+}
+
+/* use same nice font everywhere (like your screenshot #1) */
+.card {
+  background: #fff;
+  border-radius: 20px;
+  border: 1px solid #eee;
+  padding: 22px;
+  box-shadow: 0 22px 60px rgba(0, 0, 0, 0.08);
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  color: #111827;
+}
+
+/* Header */
+.header {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.logo {
+  width: 42px;
+  height: 42px;
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  background: #ede9fe;
+  color: #6d28d9;
+  font-weight: 700;
+  font-size: 18px;
+  flex: 0 0 auto;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: 750;
+  color: #5b21b6;
+  line-height: 1.15;
+  letter-spacing: -0.2px;
+}
+
+.subtitle {
+  opacity: 0.75;
+  margin-top: 6px;
+  line-height: 1.45;
+  font-size: 14px;
+}
+
+/* Labels */
+.section {
+  margin-top: 18px;
+}
+
+.labelRow {
+  display: flex;
+  gap: 8px;
+  align-items: baseline;
+}
+
+.label {
+  font-weight: 650;
+  font-size: 14px;
+}
+
+.required {
+  color: #6d28d9;
+  font-weight: 650;
+  font-size: 13px;
+}
+
+.optional {
+  color: #2563eb;
+  font-weight: 650;
+  font-size: 13px;
+  opacity: 0.9;
+}
+
+/* Drop zone */
+.drop {
+  margin-top: 10px;
+  border-radius: 16px;
+  border: 2px dashed #d7c8ff;
+  padding: 14px;
+  display: block;
+  cursor: pointer;
+  background: #fbfaff;
+}
+
+.dropHint {
+  height: 210px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  color: #111827;
+}
+
+.dropHintTitle {
+  font-weight: 650;
+  font-size: 16px;
+}
+
+.dropHintSub {
+  opacity: 0.7;
+  margin-top: 6px;
+  font-size: 13px;
+}
+
+.previewImg {
+  width: 100%;
+  max-height: 240px;
+  object-fit: cover;
+  border-radius: 14px;
+  display: block;
+}
+
+/* Inputs */
+.textarea {
+  width: 100%;
+  margin-top: 10px;
+  padding: 12px 14px;
+  border-radius: 14px;
+  border: 1px solid #d7c8ff;
+  outline: none;
+  min-height: 90px;
+  resize: none;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+/* Voice row */
+.voiceRow {
+  margin-top: 10px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.orText {
+  opacity: 0.7;
+  font-weight: 650;
+}
+
+.btnSoft {
+  padding: 10px 14px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  background: #fff;
+  font-weight: 650;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  user-select: none;
+}
+
+.btnSoftGreen {
+  border-color: #b8f0c2;
+  background: #f1fff5;
+}
+
+.btnSoftBlue {
+  border-color: #cfe0ff;
+  background: #f3f7ff;
+}
+
+.btnSoftDanger {
+  background: #fff0f0;
+  border-color: #ffd3d3;
+}
+
+/* Primary button */
+.btnPrimary {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 14px;
+  border: 0;
+  background: linear-gradient(90deg, #7c3aed, #6d28d9);
+  color: #fff;
+  font-weight: 750;
+  cursor: pointer;
+  box-shadow: 0 10px 25px rgba(124, 58, 237, 0.22);
+  margin-top: 18px;
+}
+
+.btnPrimaryDisabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* Errors */
+.error {
+  margin-top: 12px;
+  color: crimson;
+  font-weight: 650;
+}
+
+/* Result page */
+.resultLayout {
+  height: calc(100vh - 36px); /* keeps everything inside screen */
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.topBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 2px 4px;
+}
+
+.backBtn {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  font-weight: 650;
+  opacity: 0.85;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brandName {
+  font-size: 20px;
+  font-weight: 750;
+  color: #5b21b6;
+}
+
+.logoSmall {
+  width: 36px;
+  height: 36px;
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  background: #ede9fe;
+  color: #6d28d9;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.resultCard {
+  flex: 1;
+  background: #fff;
+  border-radius: 22px;
+  border: 1px solid #eee;
+  padding: 18px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+  overflow: auto; /* scroll inside, not whole page */
+}
+
+.resultHeader {
+  font-weight: 750;
+  color: #5b21b6;
+  font-size: 18px;
+}
+
+.hr {
+  height: 1px;
+  background: #eee;
+  margin: 14px 0 18px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.tile {
+  border-radius: 16px;
+  border: 1px solid #ddd;
+  padding: 14px;
+  min-height: 130px;
+}
+
+.tileTitleRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.tileBar {
+  width: 4px;
+  height: 18px;
+  border-radius: 999px;
+}
+
+.tileTitle {
+  font-weight: 750;
+}
+
+.text {
+  opacity: 0.9;
+  line-height: 1.55;
+  font-size: 14px;
+}
+
+.ul {
+  margin: 0;
+  padding-left: 18px;
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.li {
+  margin-bottom: 8px;
+}
+
+.progressRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 6px;
+}
+
+.progressLabel {
+  font-weight: 750;
+}
+
+.progressTrack {
+  flex: 1;
+  height: 10px;
+  border-radius: 999px;
+  background: #eaf3ea;
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  border-radius: 999px;
+  background: #22c55e;
+}
+
+/* Bottom button stays visible, doesn’t go out of page */
+.bottomBtnWrap {
+  position: sticky;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0 0;
+  background: transparent;
+}
+
+.bottomBtn {
+  width: min(320px, 100%);
+}
